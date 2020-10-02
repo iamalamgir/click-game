@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Click Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>Welcome Click Game To You!</h2>
+
+    <div class = "field">
+        <div class = "box"></div>
+        <div class = "box"></div>
+        <div class = "box"></div>
+
+        <div class = "box"></div>
+        <div class = "box"></div>
+        <div class = "box"></div>
+
+        <div class = "box"></div>
+        <div class = "box"></div>
+        <div class = "box"></div>
+    </div>
+
+    <script src="jquery-3.4.1.js"></script>
+    <script>
+
+        var count = 0;
+        $(".box").click(function(){
+            count = count + 1;
+
+            if(count%2 == 0){
+                $(this).text("O");
+            }else{
+                $(this).text("X");
+            }
+        })
+
+    </script>
+</body>
+</html>
